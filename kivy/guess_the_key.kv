@@ -1,0 +1,76 @@
+<GuessTheKey>:
+    orientation: "vertical"
+
+    # Title label
+    Label:
+        text: "Guess the Key"
+        font_size: "35sp"
+        size_hint: 1, 0.1
+
+    # Remaining time label
+    Label:
+        id: remain_time
+        text: "Remaining time: "
+        font_size: "20sp"
+        size_hint: 1, 0.1
+
+    # Input fields
+    BoxLayout:
+        TextInput:
+            id: inputText1
+            multiline: False
+            size_hint: 0.5, 0.5
+            font_size: "100sp"
+            input_type: "number"
+            halign: "center"
+            input_filter: "int"
+
+        TextInput:
+            id: inputText2
+            multiline: False
+            size_hint: 0.5, 0.5
+            font_size: "100sp"
+            input_type: "number"
+            halign: "center"
+            input_filter: "int"
+
+        TextInput:
+            id: inputText3
+            multiline: False
+            size_hint: 0.5, 0.5
+            font_size: "100sp"
+            input_type: "number"
+            halign: "center"
+            input_filter: "int"
+
+    # Hint labels
+    BoxLayout:
+        orientation: "vertical"
+        size_hint: 1, 0.3
+
+        Label:
+            text: root.hint()
+            font_size: "15sp"
+            size_hint: 1, 0.2
+
+    # Submit and clear buttons
+    BoxLayout:
+        size_hint: 1, 0.2
+        spacing: 20
+        padding: 20
+
+        Button:
+            text: "Submit"
+            font_size: "20sp"
+            size_hint: 0.4, 1
+            background_normal: ""
+            background_color: 0.5, 0.7, 1, 1
+            on_press: root.checkKey()
+
+        Button:
+            text: "Clear"
+            font_size: "20sp"
+            size_hint: 0.4, 1
+            background_normal: ""
+            background_color: 1, 0.7, 0.5, 1
+            on_press: root.clear_text()
