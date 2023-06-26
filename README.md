@@ -13,7 +13,7 @@ Guess The Key is a number guessing game where the player tries to guess a secret
 2. Navigate to the project directory:
 
    ```
-   cd guess-the-key
+   cd GuessTheKey
    ```
 
 3. Install the required dependencies. You can use a virtual environment for isolation:
@@ -32,10 +32,12 @@ Guess The Key is a number guessing game where the player tries to guess a secret
 1. Run the command-line version:
 
    ```
-   python guess_key_cli.py
+   python GuessTheKey.py
    ```
 
 2. Follow the prompts to guess the key and receive hints. Enter your guesses as 3-digit numbers.
+
+For me I used pydroid 3 android application.
 
 Correct Key:
 
@@ -50,7 +52,7 @@ Wrong Key:
 1. Run the GUI version:
 
    ```
-   python guess_key_gui.py
+   python GuessTheKey.py
    ```
 
 2. The game window will open. Enter your guesses using the on-screen keypad and click the "Submit" button to check your guess. The hints will be displayed on the screen.
