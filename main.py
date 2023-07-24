@@ -5,6 +5,7 @@ from game.guess_the_key import GuessTheKey
 
 class GuessTheKeyApp(App):
     def build(self):
+    	print("run")
         return GuessTheKey()
 
 
